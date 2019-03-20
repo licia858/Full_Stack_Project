@@ -93,6 +93,8 @@ def samples(sample):
         "otu_ids": sample_data.otu_id.values.tolist(),
         "sample_values": sample_data[sample].values.tolist(),
         "otu_labels": sample_data.otu_label.tolist(),
+
+        
     }
     return jsonify(data)
 
