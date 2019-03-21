@@ -76,16 +76,25 @@ function buildCharts(sample) {
   Plotly.newPlot('bubble', data, layout);
 
 });
+<<<<<<< HEAD
 
   
   d3.json(url).then(function(data){
     console.log(data);
 
+=======
+
+  
+  d3.json(url).then(function(data){
+    console.log(data);
+
+>>>>>>> ab6034841c38e69ff4ade8f12e749dc6aad64a15
       // @TODO: Build a Bubble Chart using the sample data
 
     // @TODO: Build a Pie Chart
     //otu_ids`, `otu_labels`,and `sample_values
     var pieValues = data.sample_values.slice(0,10);
+<<<<<<< HEAD
     var pieIds = data.otu_ids.slice(0,10);
     var pieLables = data.otu_labels.slice(0,10);
 
@@ -93,6 +102,15 @@ function buildCharts(sample) {
       values: pieValues,
       labels: pieIds,
       text: pieLables,
+=======
+    var pieLables = data.otu_ids.slice(0,10);
+
+
+    var data = [{
+      values: pieValues,
+      labels: pieLables,
+      hover: pieLables,
+>>>>>>> ab6034841c38e69ff4ade8f12e749dc6aad64a15
       type: 'pie'
     }];
     
